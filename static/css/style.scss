@@ -140,6 +140,9 @@ button{
     &.learn-more{
         margin-top:20px; margin-left:20px; background-color:#ffffffcb; color: black; display:inline-block;
     }
+    &.sign-in{
+        background-color:$theme-color; color:white; display:block;
+    }
 }
 
 #store{
@@ -187,4 +190,38 @@ button{
 #extra{
     background-color:$theme-color;
     height:800px;
+}
+
+.slider-wrapper{
+    background-color:#4AE341; height:calc(100vh - 80px);
+}
+
+.form-side{
+    height:calc(100vh - 160px); display:flex; flex-direction:column; justify-content: center; position:relative;
+}
+
+.sign-in{
+    font-size:16px; position:absolute;
+    bottom:0px; font-weight:500;
+}
+
+.form{
+    width:70%; display:block;
+
+    &__title{
+        font-size:24px; margin-bottom:30px;
+    }
+    &__label{
+        font-size:16px; display:block;
+        margin-bottom:5px;
+    }
+
+    &__input-field{
+        height:36px; width:100%; border-radius:5px; border:2px solid #bac5de; outline:0;display:block;
+        font-size:16px; line-height:36px; padding:0 10px; margin-bottom:20px;
+    }
+
+    .sign-in{
+        width:100%; position:static;
+    }
 }

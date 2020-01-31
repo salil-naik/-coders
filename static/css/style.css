@@ -213,6 +213,12 @@ button.learn-more {
   display: inline-block;
 }
 
+button.sign-in {
+  background-color: #4ac144;
+  color: white;
+  display: block;
+}
+
 #store {
   padding: 80px 0 120px 0;
   background-color: #f5f3e4;
@@ -267,5 +273,66 @@ button.learn-more {
 #extra {
   background-color: #4ac144;
   height: 800px;
+}
+
+.slider-wrapper {
+  background-color: #4AE341;
+  height: calc(100vh - 80px);
+}
+
+.form-side {
+  height: calc(100vh - 160px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.sign-in {
+  font-size: 16px;
+  position: absolute;
+  bottom: 0px;
+  font-weight: 500;
+}
+
+.form {
+  width: 70%;
+  display: block;
+}
+
+.form__title {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.form__label {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form__input-field {
+  height: 36px;
+  width: 100%;
+  border-radius: 5px;
+  border: 2px solid #bac5de;
+  outline: 0;
+  display: block;
+  font-size: 16px;
+  line-height: 36px;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+
+.form .sign-in {
+  width: 100%;
+  position: static;
 }
 /*# sourceMappingURL=style.css.map */
