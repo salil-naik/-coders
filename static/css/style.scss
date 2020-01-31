@@ -1,0 +1,190 @@
+body{
+    // font-family: 'Raleway', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+$primary-bg: linear-gradient(45deg,#4ac144,#0ca940);
+$card-bg: linear-gradient(45deg,#ffffff,#ededed);
+$theme-color: #4ac144;
+$orange: #ff9921;
+
+// h1,h2,h3,h4,h5,h6{font-family: 'Lato', sans-serif;}
+h2{
+    font-size:64px; font-weight:normal;
+
+    .small{
+        font-size:24px;
+    }
+}
+
+h3{
+    font-weight: bold;
+    font-size:30px;
+}
+
+#header{
+    // background-color:#A8D8D6;
+    background-color:rgb(245, 243, 228);
+    // background-color:#dafebb;
+    // background-color:#000000;
+}
+
+.navbar{
+    height: 80px; 
+    font-family: 'Lato', sans-serif;
+
+    &__logo{
+        height:50px; margin-top:15px;
+    }
+
+    &__items{
+        font-size: 16px;
+        line-height:80px;
+        list-style-type: none;
+        // display:inline-block;
+        margin-right:30px;
+    }
+
+    &__item-container{
+        margin:0; padding:0; display:flex; flex-direction: row; align-content: center;
+    }
+
+    &__login{
+        line-height:80px; text-align:right;
+        font-size:16px;
+    }
+
+    &__website-title{
+        font-size:24px; font-weight: bold; line-height:80px;
+    }
+}
+
+//for hero section
+.hero-section{
+    height: calc(100vh - 80px);
+    padding-bottom: 80px;
+   
+
+    .grid-container{
+        height:100%;
+        display:flex; flex-direction:column; justify-content: center;
+    }
+}
+
+h1{font-size:80px; font-weight:bold; margin-bottom:40px;}
+
+.search{
+
+    display:flex; flex-direction:row;
+
+    // .hero-wrapper{
+    //     display:flex; flex-direction:column; justify-content: space-around;
+    // }
+
+    &__input{
+        height:80px; width:calc(50vw - 100px); background-color:#ffffff; border:0; padding:30px; font-size:24px; 
+
+        &:focus{outline:none;}
+    }
+
+    &__dropdown{
+        height:80px; border-left:1px solid bold; background-color:#ececec; padding:0 30px; font-size:24px; line-height:80px;
+    }
+
+    &__submit{
+        height:80px; font-size:24px; padding:0 50px; line-height:80px; background: $primary-bg; color:white; border:0; outline:0; cursor:pointer;
+    }
+
+    &__tags{
+        margin-top:10px; padding-left:30px;
+    }
+    &__tagItem{
+        display:inline-block; font-size:16px; text-transform: capitalize; line-height: 24px;margin-right:20px; color:$theme-color; font-weight: 500; cursor: pointer;
+
+        &:hover{
+            font-weight:bold;
+        }
+    }
+}
+
+#cta-section{
+    background-color:#000000; 
+    padding:80px 0; color:white;
+
+    .slick-slide{
+        color:$theme-color; filter: blur(5px); text-transform: capitalize;
+        span{padding-left:15px; opacity:0; }
+
+        &.slick-current{
+            filter: blur(0); span{opacity:0.8}
+        }
+
+        &:focus{
+            outline:none;
+        }
+    }
+}
+
+.cta{
+    &__desc{
+        font-size:16px; margin-top:30px; line-height:26px;display:none;
+    }
+}
+
+button{
+    padding:10px 20px; border-radius:5px; border:0; font-size:16px;
+    &.cta{
+        margin-top:20px; background-color: $theme-color; color:white; display:inline-block;
+        font-weight: bold;
+    }
+    &.learn-more{
+        margin-top:20px; margin-left:20px; background-color:#ffffffcb; color: black; display:inline-block;
+    }
+}
+
+#store{
+    padding:80px 0 120px 0; background-color:rgb(245, 243, 228);
+    h2{margin-bottom:50px;}
+}
+
+.product{
+    padding:30px;
+    // width:270px;
+    height:200px; 
+    border-radius:20px; 
+    background-color:rgb(245, 243, 228);
+    box-shadow: 9px 9px 9px rgba(0, 0, 0, 0.09), -9px -9px 9px rgba(255, 255, 255, 0.4);    
+    position:relative;
+
+
+    &__price{
+        font-size:18px; 
+    }
+
+    &__image{
+        height: 266px;
+        /* -webkit-transform: rotate(30deg); */
+        /* transform: rotate(30deg); */
+        top: 50px;
+        right: 30px;
+        position: absolute;
+    }
+
+    &__view{
+        font-size:18px; 
+        text-decoration:none; color:$theme-color; font-weight: 500; position:absolute; bottom:30px; left:30px;
+
+        &:hover, &:active{
+            color:$theme-color;
+            font-weight: bold;
+            transition: ease-in-out;
+            transition-duration: 100ms;
+        }
+    }
+
+}
+
+#extra{
+    background-color:$theme-color;
+    height:800px;
+}
