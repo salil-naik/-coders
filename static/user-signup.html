@@ -36,15 +36,15 @@
                     <div class="cell large-4 form-side">
                         <div class="form">
                             <h3 class="form__title">User Sign Up</h3>
-                            <form action="">
+                            <div>
                                 <label for="user-name" class="form__label">Username</label>
                                 <input type="text" name="user-name" id="user-name" class="form__input-field">
                                 <label for="password1" class="form__label">Enter password</label>
                                 <input type="password" name="password1" id="password1" class="form__input-field">
                                 <label for="password2" class="form__label">Re-enter password</label>
                                 <input type="password" name="password2" id="password2" class="form__input-field">
-                                <button class="sign-in">Sign Up</button>
-                            </form>
+                                <button class="sign-in" onclick="readData()">Sign Up</button>
+                            </div>
                         </div>
 
                         <div class="sign-in">Already have an account? <a href="user-login.html" style="color:#4ac144; text-decoration: underline;">Login</a></div>
@@ -58,6 +58,6 @@
             </div>
         </div>
     </div>
-
+    <script src="js/app.js"></script>
 </body>
 </html>
