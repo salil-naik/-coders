@@ -195,6 +195,7 @@ button {
   border-radius: 5px;
   border: 0;
   font-size: 16px;
+  cursor: pointer;
 }
 
 button.cta {
@@ -328,7 +329,7 @@ button.sign-in {
   font-size: 16px;
   line-height: 36px;
   padding: 0 10px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .form .sign-in {

@@ -132,7 +132,7 @@ h1{font-size:80px; font-weight:bold; margin-bottom:40px;}
 }
 
 button{
-    padding:10px 20px; border-radius:5px; border:0; font-size:16px;
+    padding:10px 20px; border-radius:5px; border:0; font-size:16px; cursor:pointer;
     &.cta{
         margin-top:20px; background-color: $theme-color; color:white; display:inline-block;
         font-weight: bold;
@@ -218,7 +218,7 @@ button{
 
     &__input-field{
         height:36px; width:100%; border-radius:5px; border:2px solid #bac5de; outline:0;display:block;
-        font-size:16px; line-height:36px; padding:0 10px; margin-bottom:20px;
+        font-size:16px; line-height:36px; padding:0 10px; margin-bottom:15px;
     }
 
     .sign-in{
