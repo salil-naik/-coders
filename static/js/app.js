@@ -50,7 +50,7 @@ function login(){
   };
 
   var loginStatus;
-  var remedyEntryForm = 'https://letzcode.in';
+  var remedyEntryForm = './remedy-entry-form.html';
 
   fetch("https://hack-by-the-beach.herokuapp.com/users/signin", requestOptions)
     .then(response => {response.text(); loginStatus = response.status;})

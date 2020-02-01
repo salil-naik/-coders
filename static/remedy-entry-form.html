@@ -16,7 +16,7 @@
             <div class="grid-container">
                 <div class="grid-x grid-margin-x">
                     <!-- <div class="cell large-2"><img src="images/herbal-med.png" alt="website logo" class="navbar__logo"></div> -->
-                    <div class="cell large-2"><div class="navbar__website-title">Herbal-Med</div></div>
+                    <div class="cell large-2"><div class="navbar__website-title" onclick="moveToIndex()">Trustful Vaidya</div></div>
                     <div class="cell large-8">
                         <ul class="navbar__item-container">
                             <li class="navbar__items">Remedies</li>
@@ -46,13 +46,13 @@
                     <div class="cell large-7">
                         <div class="form-wrap">
                             <h3>Enter your remedy</h3>
-                            <form action="" class="remedy">
+                            <div class="remedy">
                                 <label for="remedy-title">Add title</label>
                                 <input type="text" name="remedy-title" id="remedy-title" placeholder="Example: Remedy for hair loss">
                                 <label for="remedy-desc">Add detailed remedy</label>
                                 <textarea name="remedy-desc" id="remedy-desc" cols="30" rows="10" placeholder="Enter your remedy here..."></textarea>
-                                <button class="signin">Submit for verification</button>
-                            </form>
+                                <button class="signin" onclick="saveRemedy()">Submit for verification</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -74,6 +74,35 @@
             cssEase: 'linear'
         });
         });
+    </script>
+
+    <script>
+    
+    function saveRemedy(){
+
+        let title = document.getElementById('remedy-title').value;
+        let desc = document.getElementById('remedy-desc').value;
+        var myHeaders = new Headers();
+        myHeaders.append("Content-Type", "application/json");
+
+        var raw = JSON.stringify({"title":title,"description":desc});
+
+        var requestOptions = {
+        method: 'POST',
+        headers: myHeaders,
+        body: raw,
+        redirect: 'follow'
+        };
+
+        fetch("https://hack-by-the-beach.herokuapp.com/users/remedy", requestOptions)
+        .then(response => {if(response.status==200){alert("Thank you for submitting your remedy")};window.location='index.html';return response.text()})
+        .then(result => console.log(result))
+        .catch(error => console.log('error', error));
+            }
+
+    function moveToIndex(){
+        window.location = './index.html';
+    }
     </script>
 </body>
 </html>

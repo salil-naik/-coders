@@ -17,7 +17,7 @@
             <div class="grid-container">
                 <div class="grid-x grid-margin-x">
                     <!-- <div class="cell large-2"><img src="images/herbal-med.png" alt="website logo" class="navbar__logo"></div> -->
-                    <div class="cell large-2"><div class="navbar__website-title">Herbal-Med</div></div>
+                    <div class="cell large-2"><div class="navbar__website-title">Trustful Vaidya</div></div>
                     <div class="cell large-8">
                         <ul class="navbar__item-container">
                             <li class="navbar__items">Remedies</li>
@@ -53,6 +53,9 @@
                             <button type="submit" class="search__submit">Submit</button>
                         </div>
                     </div>
+
+                    <!--canvas comes here-->
+
                 </div>
             </div>
         </div>
@@ -66,7 +69,7 @@
                         ayurvedic remedy for</h2>
                     <p class="cta__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates modi doloribus vel sit facilis, fugit in dolor ratione tempore quas aspernatur nulla incidunt iure officiis autem ipsam, pariatur maiores dolorem?</p>
 
-                    <button class="cta">Submit your remedy</button>
+                    <button class="cta" onclick="openForm()">Submit your remedy</button>
                     <button class="learn-more">Learn more</button>
                 </div>
 
@@ -90,9 +93,9 @@
                 <h2 class="cell large-12"><strong style="color:#4ac144">Ayurvedic</strong> Store</h2>
                 <div class="large-3 cell">
                     <div class="product">
-                        <h3 class="product__name">Amla Amrit</h3>
-                        <p class="product__price">₹30</p>
-                        <img src="images/product51.png" alt="product-image" class="product__image productOne" data-rellax-speed="0.5">
+                        <h3 class="product__name">Kesh Kanti</h3>
+                        <p class="product__price">₹110</p>
+                        <img src="images/product61.png" alt="product-image" class="product__image productOne" data-rellax-speed="0.5">
                         <a href="#" class="product__view">View product</a>
                     </div>
                 </div>
@@ -124,8 +127,28 @@
         </div>
     </div>
 
-    <div id="extra">
-        salil
+    <div class="footer">
+        <div class="grid-container">
+            <div class="grid-x grid-margin-x">
+                <div class="cell large-6">
+                    <h3>Subscribe to our newsletter</h3>
+                    <form class="news-form">
+                        <input type="email" class="news-form__input" placeholder="john@example.com">
+                        <button class="submit news-form__button">Submit</button>
+                    </form>
+                </div>
+
+                <div class="cell large-6">
+                    <div class="last-block">
+                        <span>Terms</span>    
+                        <span>Copyright 2020</span>
+                        <span>All Rights Reserved</span>
+                        <span>Privacy</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </div>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -153,6 +176,28 @@
             autoplaySpeed: 1000,
         });
         });
+    </script>
+
+    <script src="js/three.js"></script>
+    <script>
+        let scene;
+
+        function init(){
+            scene = new THREE.Scene();
+            scene.background = new THREE.Color(0Xdddddd);
+
+            camera = new THREE.PerspectiveCamera(40, window.innerWidth/window.innerHeight, 1, 5000);
+            hlight = new THREE.AmbientLight (0x404040,100);
+            scene.add(hlight);
+
+            renderer = new THREE.WebGLRenderer({antialias:true});
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            document.body.appendChild(renderer.domElement);
+        }
+
+        function openForm(){
+            window.location="./user-login.html"
+        }
     </script>
 </body>
 </html>

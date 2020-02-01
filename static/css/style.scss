@@ -55,7 +55,7 @@ h3{
     }
 
     &__website-title{
-        font-size:24px; font-weight: bold; line-height:80px;
+        font-size:24px; font-weight: bold; line-height:80px;cursor:pointer;
     }
 }
 
@@ -405,4 +405,38 @@ button.reject{
     &:hover{
         background-color:black; color:white; transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
     }
+}
+
+.footer{
+    background-color:#000;
+    padding:80px 0;
+
+    h3{
+        color:$theme-color;
+    }
+}
+
+.news-form{
+    width:500px;
+    display:flex;flex-direction:row;margin-top:30px;
+    &__input{
+        height: 36px;
+        width: 100%;
+        border-radius: 5px;
+        border: 0;
+        outline: 0;
+        display: block;
+        font-size: 16px;
+        line-height: 36px;
+        padding: 0 10px;
+        margin-bottom: 15px;
+    }
+
+    &__button{
+        height: 36px; background-color:$theme-color; color:white; margin-left:20px;
+    }
+}
+
+.last-block{
+    display:flex;flex-direction:row; justify-content: space-evenly; color:white; padding-top:83px;
 }

@@ -62,6 +62,7 @@ h3 {
   font-size: 24px;
   font-weight: bold;
   line-height: 80px;
+  cursor: pointer;
 }
 
 .hero-section {
@@ -591,5 +592,61 @@ button.reject:hover {
   color: white;
   -webkit-transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
   transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.footer {
+  background-color: #000;
+  padding: 80px 0;
+}
+
+.footer h3 {
+  color: #4ac144;
+}
+
+.news-form {
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 30px;
+}
+
+.news-form__input {
+  height: 36px;
+  width: 100%;
+  border-radius: 5px;
+  border: 0;
+  outline: 0;
+  display: block;
+  font-size: 16px;
+  line-height: 36px;
+  padding: 0 10px;
+  margin-bottom: 15px;
+}
+
+.news-form__button {
+  height: 36px;
+  background-color: #4ac144;
+  color: white;
+  margin-left: 20px;
+}
+
+.last-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  color: white;
+  padding-top: 83px;
 }
 /*# sourceMappingURL=style.css.map */
